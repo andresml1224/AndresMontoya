@@ -14,11 +14,23 @@ public class Promotor extends Empleado {
 
     @Override
     public long calcularSalarioMontoya() {
-        long pagoVolantesAndres = volantesRepartidosAndres * valorVolanteAndres;
+        long pagoVolantesAndres = getVolantesRepartidosAndres() * getValorVolanteAndres();
         long pagoComprasAndres = 0;
-        for (int i = 0; i < comprasVolanteAndres; i++) {
+        for (int i = 0; i < getComprasVolanteAndres(); i++) {
             pagoComprasAndres += 15000;
         }
         return pagoVolantesAndres + pagoComprasAndres;
+    }
+
+    public int getVolantesRepartidosAndres() {
+        return volantesRepartidosAndres;
+    }
+
+    public long getValorVolanteAndres() {
+        return valorVolanteAndres;
+    }
+
+    public int getComprasVolanteAndres() {
+        return comprasVolanteAndres;
     }
 }

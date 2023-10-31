@@ -11,7 +11,7 @@ public class Vendedor extends Directo{
 
     @Override
     public long calcularSalarioMontoya() {
-        return super.calcularSalarioMontoya() + calcularComisionMontoya();
+        return getSalarioAndres() + calcularComisionMontoya();
     }
 
     public long calcularComisionMontoya(){
