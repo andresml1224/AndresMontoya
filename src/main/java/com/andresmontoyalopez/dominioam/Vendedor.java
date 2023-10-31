@@ -8,6 +8,8 @@ public class Vendedor extends Directo{
         super(nombreAndres, salarioAndres);
         this.ventasDelMesAndres = ventasDelMesAndres;
     }
+
+    @Override
     public long calcularSalarioMontoya() {
         return super.calcularSalarioMontoya() + calcularComisionMontoya();
     }

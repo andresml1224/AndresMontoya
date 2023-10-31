@@ -8,7 +8,17 @@ public class Freelance extends Empleado{
         this.valorHoraAndres = valorHoraAndres;
         this.horasTrabajadasAndres = horasTrabajadasAndres;
     }
+
+    @Override
     public long calcularSalarioMontoya() {
-        return horasTrabajadasAndres * valorHoraAndres;
+        return getHorasTrabajadasAndres() * getValorHoraAndres();
+    }
+
+    public long getValorHoraAndres() {
+        return valorHoraAndres;
+    }
+
+    public long getHorasTrabajadasAndres() {
+        return horasTrabajadasAndres;
     }
 }

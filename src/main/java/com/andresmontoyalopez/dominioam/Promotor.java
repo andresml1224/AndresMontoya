@@ -11,6 +11,8 @@ public class Promotor extends Empleado {
         this.valorVolanteAndres = valorVolanteAndres;
         this.comprasVolanteAndres = comprasVolanteAndres;
     }
+
+    @Override
     public long calcularSalarioMontoya() {
         long pagoVolantesAndres = volantesRepartidosAndres * valorVolanteAndres;
         long pagoComprasAndres = 0;

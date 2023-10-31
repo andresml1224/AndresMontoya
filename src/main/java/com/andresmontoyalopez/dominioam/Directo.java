@@ -7,6 +7,8 @@ public class Directo extends Empleado {
         super(nombreAndres);
         this.salarioAndres = salarioAndres;
     }
+
+    @Override
     public long calcularSalarioMontoya() {
         long salarioTotalAndres = 0;
         long aporteSaludAndres = calcularSaludMontoya();
